@@ -1,0 +1,63 @@
+   | Name                                                        | Type                          | Params
+---------------------------------------------------------------------------------------------------------------
+0  | train_metrics                                               | ModuleDict                    | 0     
+1  | train_metrics.accuracy                                      | Accuracy                      | 0     
+2  | val_metrics                                                 | ModuleDict                    | 0     
+3  | val_metrics.accuracy                                        | Accuracy                      | 0     
+4  | test_metrics                                                | ModuleDict                    | 0     
+5  | test_metrics.accuracy                                       | Accuracy                      | 0     
+6  | model                                                       | BertForSequenceClassification | 4.4 M 
+7  | model.bert                                                  | BertModel                     | 4.4 M 
+8  | model.bert.embeddings                                       | BertEmbeddings                | 4.0 M 
+9  | model.bert.embeddings.word_embeddings                       | Embedding                     | 3.9 M 
+10 | model.bert.embeddings.position_embeddings                   | Embedding                     | 65.5 K
+11 | model.bert.embeddings.token_type_embeddings                 | Embedding                     | 256   
+12 | model.bert.embeddings.LayerNorm                             | LayerNorm                     | 256   
+13 | model.bert.embeddings.dropout                               | Dropout                       | 0     
+14 | model.bert.encoder                                          | BertEncoder                   | 396 K 
+15 | model.bert.encoder.layer                                    | ModuleList                    | 396 K 
+16 | model.bert.encoder.layer.0                                  | BertLayer                     | 198 K 
+17 | model.bert.encoder.layer.0.attention                        | BertAttention                 | 66.3 K
+18 | model.bert.encoder.layer.0.attention.self                   | BertSelfAttention             | 49.5 K
+19 | model.bert.encoder.layer.0.attention.self.query             | Linear                        | 16.5 K
+20 | model.bert.encoder.layer.0.attention.self.key               | Linear                        | 16.5 K
+21 | model.bert.encoder.layer.0.attention.self.value             | Linear                        | 16.5 K
+22 | model.bert.encoder.layer.0.attention.self.dropout           | Dropout                       | 0     
+23 | model.bert.encoder.layer.0.attention.output                 | BertSelfOutput                | 16.8 K
+24 | model.bert.encoder.layer.0.attention.output.dense           | Linear                        | 16.5 K
+25 | model.bert.encoder.layer.0.attention.output.LayerNorm       | LayerNorm                     | 256   
+26 | model.bert.encoder.layer.0.attention.output.dropout         | Dropout                       | 0     
+27 | model.bert.encoder.layer.0.intermediate                     | BertIntermediate              | 66.0 K
+28 | model.bert.encoder.layer.0.intermediate.dense               | Linear                        | 66.0 K
+29 | model.bert.encoder.layer.0.intermediate.intermediate_act_fn | GELUActivation                | 0     
+30 | model.bert.encoder.layer.0.output                           | BertOutput                    | 65.9 K
+31 | model.bert.encoder.layer.0.output.dense                     | Linear                        | 65.7 K
+32 | model.bert.encoder.layer.0.output.LayerNorm                 | LayerNorm                     | 256   
+33 | model.bert.encoder.layer.0.output.dropout                   | Dropout                       | 0     
+34 | model.bert.encoder.layer.1                                  | BertLayer                     | 198 K 
+35 | model.bert.encoder.layer.1.attention                        | BertAttention                 | 66.3 K
+36 | model.bert.encoder.layer.1.attention.self                   | BertSelfAttention             | 49.5 K
+37 | model.bert.encoder.layer.1.attention.self.query             | Linear                        | 16.5 K
+38 | model.bert.encoder.layer.1.attention.self.key               | Linear                        | 16.5 K
+39 | model.bert.encoder.layer.1.attention.self.value             | Linear                        | 16.5 K
+40 | model.bert.encoder.layer.1.attention.self.dropout           | Dropout                       | 0     
+41 | model.bert.encoder.layer.1.attention.output                 | BertSelfOutput                | 16.8 K
+42 | model.bert.encoder.layer.1.attention.output.dense           | Linear                        | 16.5 K
+43 | model.bert.encoder.layer.1.attention.output.LayerNorm       | LayerNorm                     | 256   
+44 | model.bert.encoder.layer.1.attention.output.dropout         | Dropout                       | 0     
+45 | model.bert.encoder.layer.1.intermediate                     | BertIntermediate              | 66.0 K
+46 | model.bert.encoder.layer.1.intermediate.dense               | Linear                        | 66.0 K
+47 | model.bert.encoder.layer.1.output                           | BertOutput                    | 65.9 K
+48 | model.bert.encoder.layer.1.output.dense                     | Linear                        | 65.7 K
+49 | model.bert.encoder.layer.1.output.LayerNorm                 | LayerNorm                     | 256   
+50 | model.bert.encoder.layer.1.output.dropout                   | Dropout                       | 0     
+51 | model.bert.pooler                                           | BertPooler                    | 16.5 K
+52 | model.bert.pooler.dense                                     | Linear                        | 16.5 K
+53 | model.bert.pooler.activation                                | Tanh                          | 0     
+54 | model.dropout                                               | Dropout                       | 0     
+55 | model.classifier                                            | Linear                        | 258   
+---------------------------------------------------------------------------------------------------------------
+258       Trainable params
+4.4 M     Non-trainable params
+4.4 M     Total params
+17.545    Total estimated model params size (MB)
