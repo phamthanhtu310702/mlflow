@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/phamthanhtu/Documents/mlflow/intro-mlflow/mlruns/1/342aa4496e474da1ba89eef9d6fe8106/artifacts
+end_time: 1665679305097
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 342aa4496e474da1ba89eef9d6fe8106
+run_uuid: 342aa4496e474da1ba89eef9d6fe8106
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1665679297807
+status: 3
+tags: []
+user_id: phamthanhtu

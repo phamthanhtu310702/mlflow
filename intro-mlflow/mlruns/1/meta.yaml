@@ -1,0 +1,6 @@
+artifact_location: file:///Users/phamthanhtu/Documents/mlflow/intro-mlflow/mlruns/1
+creation_time: 1665679297727
+experiment_id: '1'
+last_update_time: 1665679297727
+lifecycle_stage: active
+name: dl_model_chapter02
