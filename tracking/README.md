@@ -13,10 +13,18 @@
 * Use Postgres/MySQL Backend Store and Minio Artifact Store for Easy Collaboration
 *  Instead of having a local mlruns folder for storing the information from MLflow Tracking, we store the parameters and metrics in a PostgreSQL/MySQL Database, while storing the artifacts in Minio object storage.
 
-## Install 
+## Set Up 
 1. Direct to mlflow_docker_setup subfloder
     ```
     bash start_mlflow.sh
     ```
+2. Go to http://localhost/ to see the MLflow UI web page. 
+3. MinIO artifact store web UI:http://localhost:9000/
+    * Access Key: minio
+    * Secret Key: minio123
 
-
+4. Stop the server
+    ```
+    bash stop_mlflow.sh
+    ```
+## Implementing MLflow model tracking
