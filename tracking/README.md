@@ -28,3 +28,5 @@
     bash stop_mlflow.sh
     ```
 ## Implementing MLflow model tracking
+* auto-logging does not register the model. 
+* If we don't want to use auto-logging, then we can use MLflow's model logging API directly. 
