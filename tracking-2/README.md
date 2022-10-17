@@ -22,4 +22,12 @@ Define MLproject file:
 
 * Each step is correspoding to a file .py. We have 3 files download_data.py, fine_tuning_model.py, and register_model.py.
 
+* The main idea here is that for each pipeline step task, it needs to start with mlflow.start_ run to launch an MLflow experiment run.
+
+* we need to log some parameters using mlflow.log_parameter.
+
+* We also want to set a tag to indicate which step is executed using mlflow. set_tag.
+
+* log_artifiact: Log all the contents of a local directory as artifacts of the run. If no run is active, this method will create a new active run.
+
 * mlflow.run(".", "download_data",parameters={}) invokes the entry point 'download data in MLproject file defined before'
