@@ -31,3 +31,9 @@ Define MLproject file:
 * log_artifiact: Log all the contents of a local directory as artifacts of the run. If no run is active, this method will create a new active run.
 
 * mlflow.run(".", "download_data",parameters={}) invokes the entry point 'download data in MLproject file defined before'
+
+
+## Summary:
+* we need a MLflow Project file to allow mlflow.run() of each step to access to parameters.
+* We can pass the parameters to the next step by using mlflow.get_run.data.params
+* mlflow.run -> tracking -> log_info
