@@ -6,7 +6,7 @@
 * Tracking model metrics
 * Tracking model parameters 
 
-## Setting up a full-fledged local MLflow tracking server
+## Setting up a FULL-FLEDGED local MLflow tracking server
 * The benefit of having a model registry is that we can register the model, version control the model, and prepare for model deployment into production.
 
 [Postgres](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi3urrbmtz6AhUmTmwGHShwDAYQFnoECAwQAQ&url=https%3A%2F%2Fmedium.com%2Fnoodle-labs-the-future-of-ai%2Fintroduction-to-mlflow-for-mlops-part-3-database-tracking-minio-artifact-storage-and-registry-9fef196aaf42&usg=AOvVaw16HhPPuc5rZ7WJULGO1kSp)/MySQL backend store for mlflow: 
