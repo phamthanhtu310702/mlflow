@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/phamthanhtu/Documents/mlflow/tuning/mlruns/3/fdd05fa0cc2e48698993ff4ef16da6d3/artifacts
+end_time: 1666071683886
+entry_point_name: ''
+experiment_id: '3'
+lifecycle_stage: active
+name: ''
+run_id: fdd05fa0cc2e48698993ff4ef16da6d3
+run_uuid: fdd05fa0cc2e48698993ff4ef16da6d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1666071677879
+status: 3
+tags: []
+user_id: phamthanhtu
