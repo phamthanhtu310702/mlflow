@@ -30,3 +30,11 @@
 ### Support of DL frameworks:
 - Ray Tune has integration with popular DL frameworks such as PyTorch Lightning and TensorFlow/Keras.
 
+## Creating HPO-ready DL models with Ray Tune and MLflow
+- **Objective function**: An objective function can be either to minimize or maximize some metric values for a given configuration of hyperparameters. This objective function needs to be wrapped as a trainable function, where Ray Tune can do HPO
+- **Function-based APIs and class-based APIs**: A function-based API allows a user
+to insert Ray Tune statements into the model training function (called trainable in Ray Tune) such as tune.report for reporting model metrics
+- **Trials**: Each trial is a run of a specific configuration of hyperparameters. This can be executed by passing the trainable function into tune.run, where Ray Tune will orchestrate the HPO process.
+- **Search space**: This is a set of configurations where each hyperparameter will be assigned a way in which to sample from certain distributions
+- **Suggest**:  Ray Tune provides integration to many popular open source search algorithms and can automatically convert the search space 
+- **Scheduler**: Since early stopping or pruning can significantly speed up the HPO process, it is highly recommended that you use a scheduler in conjunction with a searcher: such as ASHA, HyperBand, and more.
