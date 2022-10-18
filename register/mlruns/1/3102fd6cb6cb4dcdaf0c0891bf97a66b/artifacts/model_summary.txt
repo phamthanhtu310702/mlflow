@@ -1,0 +1,82 @@
+   | Name                                   | Type              | Params
+------------------------------------------------------------------------------
+0  | train_metrics                          | ModuleDict        | 0     
+1  | train_metrics.accuracy                 | Accuracy          | 0     
+2  | val_metrics                            | ModuleDict        | 0     
+3  | val_metrics.accuracy                   | Accuracy          | 0     
+4  | test_metrics                           | ModuleDict        | 0     
+5  | test_metrics.accuracy                  | Accuracy          | 0     
+6  | adapter                                | DefaultAdapter    | 11.2 M
+7  | adapter.backbone                       | ResNet            | 11.2 M
+8  | adapter.backbone.conv1                 | Conv2d            | 9.4 K 
+9  | adapter.backbone.bn1                   | BatchNorm2d       | 128   
+10 | adapter.backbone.relu                  | ReLU              | 0     
+11 | adapter.backbone.maxpool               | MaxPool2d         | 0     
+12 | adapter.backbone.layer1                | Sequential        | 147 K 
+13 | adapter.backbone.layer1.0              | BasicBlock        | 74.0 K
+14 | adapter.backbone.layer1.0.conv1        | Conv2d            | 36.9 K
+15 | adapter.backbone.layer1.0.bn1          | BatchNorm2d       | 128   
+16 | adapter.backbone.layer1.0.relu         | ReLU              | 0     
+17 | adapter.backbone.layer1.0.conv2        | Conv2d            | 36.9 K
+18 | adapter.backbone.layer1.0.bn2          | BatchNorm2d       | 128   
+19 | adapter.backbone.layer1.1              | BasicBlock        | 74.0 K
+20 | adapter.backbone.layer1.1.conv1        | Conv2d            | 36.9 K
+21 | adapter.backbone.layer1.1.bn1          | BatchNorm2d       | 128   
+22 | adapter.backbone.layer1.1.relu         | ReLU              | 0     
+23 | adapter.backbone.layer1.1.conv2        | Conv2d            | 36.9 K
+24 | adapter.backbone.layer1.1.bn2          | BatchNorm2d       | 128   
+25 | adapter.backbone.layer2                | Sequential        | 525 K 
+26 | adapter.backbone.layer2.0              | BasicBlock        | 230 K 
+27 | adapter.backbone.layer2.0.conv1        | Conv2d            | 73.7 K
+28 | adapter.backbone.layer2.0.bn1          | BatchNorm2d       | 256   
+29 | adapter.backbone.layer2.0.relu         | ReLU              | 0     
+30 | adapter.backbone.layer2.0.conv2        | Conv2d            | 147 K 
+31 | adapter.backbone.layer2.0.bn2          | BatchNorm2d       | 256   
+32 | adapter.backbone.layer2.0.downsample   | Sequential        | 8.4 K 
+33 | adapter.backbone.layer2.0.downsample.0 | Conv2d            | 8.2 K 
+34 | adapter.backbone.layer2.0.downsample.1 | BatchNorm2d       | 256   
+35 | adapter.backbone.layer2.1              | BasicBlock        | 295 K 
+36 | adapter.backbone.layer2.1.conv1        | Conv2d            | 147 K 
+37 | adapter.backbone.layer2.1.bn1          | BatchNorm2d       | 256   
+38 | adapter.backbone.layer2.1.relu         | ReLU              | 0     
+39 | adapter.backbone.layer2.1.conv2        | Conv2d            | 147 K 
+40 | adapter.backbone.layer2.1.bn2          | BatchNorm2d       | 256   
+41 | adapter.backbone.layer3                | Sequential        | 2.1 M 
+42 | adapter.backbone.layer3.0              | BasicBlock        | 919 K 
+43 | adapter.backbone.layer3.0.conv1        | Conv2d            | 294 K 
+44 | adapter.backbone.layer3.0.bn1          | BatchNorm2d       | 512   
+45 | adapter.backbone.layer3.0.relu         | ReLU              | 0     
+46 | adapter.backbone.layer3.0.conv2        | Conv2d            | 589 K 
+47 | adapter.backbone.layer3.0.bn2          | BatchNorm2d       | 512   
+48 | adapter.backbone.layer3.0.downsample   | Sequential        | 33.3 K
+49 | adapter.backbone.layer3.0.downsample.0 | Conv2d            | 32.8 K
+50 | adapter.backbone.layer3.0.downsample.1 | BatchNorm2d       | 512   
+51 | adapter.backbone.layer3.1              | BasicBlock        | 1.2 M 
+52 | adapter.backbone.layer3.1.conv1        | Conv2d            | 589 K 
+53 | adapter.backbone.layer3.1.bn1          | BatchNorm2d       | 512   
+54 | adapter.backbone.layer3.1.relu         | ReLU              | 0     
+55 | adapter.backbone.layer3.1.conv2        | Conv2d            | 589 K 
+56 | adapter.backbone.layer3.1.bn2          | BatchNorm2d       | 512   
+57 | adapter.backbone.layer4                | Sequential        | 8.4 M 
+58 | adapter.backbone.layer4.0              | BasicBlock        | 3.7 M 
+59 | adapter.backbone.layer4.0.conv1        | Conv2d            | 1.2 M 
+60 | adapter.backbone.layer4.0.bn1          | BatchNorm2d       | 1.0 K 
+61 | adapter.backbone.layer4.0.relu         | ReLU              | 0     
+62 | adapter.backbone.layer4.0.conv2        | Conv2d            | 2.4 M 
+63 | adapter.backbone.layer4.0.bn2          | BatchNorm2d       | 1.0 K 
+64 | adapter.backbone.layer4.0.downsample   | Sequential        | 132 K 
+65 | adapter.backbone.layer4.0.downsample.0 | Conv2d            | 131 K 
+66 | adapter.backbone.layer4.0.downsample.1 | BatchNorm2d       | 1.0 K 
+67 | adapter.backbone.layer4.1              | BasicBlock        | 4.7 M 
+68 | adapter.backbone.layer4.1.conv1        | Conv2d            | 2.4 M 
+69 | adapter.backbone.layer4.1.bn1          | BatchNorm2d       | 1.0 K 
+70 | adapter.backbone.layer4.1.relu         | ReLU              | 0     
+71 | adapter.backbone.layer4.1.conv2        | Conv2d            | 2.4 M 
+72 | adapter.backbone.layer4.1.bn2          | BatchNorm2d       | 1.0 K 
+73 | adapter.backbone.avgpool               | AdaptiveAvgPool2d | 0     
+74 | adapter.head                           | Linear            | 1.0 K 
+------------------------------------------------------------------------------
+10.6 K    Trainable params
+11.2 M    Non-trainable params
+11.2 M    Total params
+44.710    Total estimated model params size (MB)

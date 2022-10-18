@@ -8,3 +8,5 @@
 * Implement scalable deep learning explainability as a service
 * Deploy deep learning batch and streaming inference services
 * Ship practical Computer Vision solutions from experimentation to production (local deployment)
+
+* Data-2 is a small part of data folder stored in my local machine. It is used to learn how to use mlflow, but not to learn how to train an efficient model. So we do not need the huge amount of data. 
